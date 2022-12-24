@@ -15,6 +15,12 @@
         <script src="./scripts/about.js"></script>
         <script src="./scripts/works.js"></script>
         <script src="./scripts/contact.js"></script>
+        <script>
+            const onLoad = () => {
+                document.getElementById('root').innerHTML = window.history.pushState({},'', `${window.location.origin}/`)
+            }
+            onLoad()
+        </script>
     <body>
         <aside>
         <nav class="nav flex-column">

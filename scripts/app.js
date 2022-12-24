@@ -8,14 +8,9 @@ const routes = {
 const rootDiv = document.getElementById('root');
 rootDiv.innerHTML = routes[window.location.pathname];
 
-const onLoad = (pathname) => {
-    window.history.pushState(
-        {},
-        pathname,
-        window.location.origin + pathname
-    )
-    document.getElementById('root').innerHTML = routes[home]
-}
+// const onLoad = () => {
+//     document.getElementById('root').innerHTML = window.history.pushState({},'', `${window.location.origin}/`)
+// }
     
 const onNavigate = (pathname) => {
     window.history.pushState(
