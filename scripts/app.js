@@ -6,6 +6,7 @@ const routes = {
 };
     
 const rootDiv = document.getElementById('root');
+//console.log(routes['/'])
 rootDiv.innerHTML = routes['/'];
 
 const onNavigate = (pathname) => {
