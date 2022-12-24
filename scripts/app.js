@@ -6,7 +6,7 @@ const routes = {
 };
     
 const rootDiv = document.getElementById('root');
-rootDiv.innerHTML = routes[`${window.location.origin} + /portfolio_23/`];
+rootDiv.innerHTML = routes['/'];
 
 const onNavigate = (pathname) => {
     // console.log(window.location)
