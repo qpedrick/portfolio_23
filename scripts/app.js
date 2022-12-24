@@ -6,10 +6,10 @@ const routes = {
 };
     
 const rootDiv = document.getElementById('root');
-rootDiv.innerHTML = routes[window.location.pathname];
+rootDiv.innerHTML = routes[`${window.location.origin} + /portfolio_23/`];
 
 const onNavigate = (pathname) => {
-    console.log(window.location)
+    // console.log(window.location)
     window.history.pushState(
         {},
         pathname,
